@@ -1,6 +1,6 @@
 {
-  "name": "servicebus",
-  "description": "Simple service bus for sending events between processes using amqp.",
+  "name": "@servicebus/bus",
+  "description": "Base Bus Class - includes middleware logic and event emitter behavior.",
   "version": "0.0.0-development",
   "author": "Matt Walters <mattwalters5@gmail.com>",
   "contributors": [
@@ -12,28 +12,25 @@
   "scripts": {
     "commit": "git-cz",
     "test": "NODE_ENV=test jest --config jest.json --coverage --verbose",
-    "test:watch": "NODE_ENV=test jest --config jest.json --watch --coverage --verbose",
-    "test:staging": "mocha -R spec --recursive --exit"
+    "test:watch": "NODE_ENV=test jest --config jest.json --watch --coverage --verbose"
   },
-  "homepage": "https://github.com/mateodelnorte/servicebus",
+  "homepage": "https://github.com/servicebus/bus",
   "repository": {
     "type": "git",
-    "url": "https://github.com/mateodelnorte/servicebus.git"
+    "url": "https://github.com/servicebus/bus.git"
   },
   "engines": {
     "node": "0.6 || 0.8 || 0.9 || 0.10 || 0.12"
   },
   "dependencies": {
-    "amqplib": "0.5.3",
     "debug": "4.1.1",
-    "extend": "3.0.2",
     "readable-id-mjs": "1.0.0",
     "uuid": "3.3.2"
   },
   "devDependencies": {
     "commitizen": "3.0.5",
     "cz-conventional-changelog": "2.1.0",
-    "jest": "23.6.0",
+    "jest": "^23.6.0",
     "longjohn": "0.2.12",
     "mocha": "5.2.0",
     "servicebus-retry": "0.0.13",
