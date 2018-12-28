@@ -15,7 +15,7 @@ function packageMessage (queueName, message, options, next) {
 }
 
 function handleIncoming (channel, message, options, next) {
-  message.content.type = message.properties.type || message.content.type;
+  message.content.type =  message.properties && message.properties.type || message.content.type;
   next(null, channel, message, options);
 }
 
