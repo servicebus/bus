@@ -28,9 +28,9 @@
     "uuid": "3.3.2"
   },
   "devDependencies": {
-    "commitizen": "3.0.5",
+    "commitizen": "3.0.6",
     "cz-conventional-changelog": "2.1.0",
-    "jest": "^23.6.0",
+    "jest": "^24.0.0",
     "longjohn": "0.2.12",
     "mocha": "5.2.0",
     "servicebus-retry": "0.0.13",
